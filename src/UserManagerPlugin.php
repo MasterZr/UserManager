@@ -1,20 +1,27 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Sipai\UserManager;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Sipai\UserManager\Resources\UserResource;
 
-class SkeletonPlugin implements Plugin
+class UserManagerPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'sipai-user-manager';
     }
 
     public function register(Panel $panel): void
     {
-        //
+        $panel
+            ->resources([
+                UserResource::class
+            ])
+            ->pages([
+//                Profile::class,
+            ]);
     }
 
     public function boot(Panel $panel): void

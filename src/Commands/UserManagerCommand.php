@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace sipai\UserManager\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class UserManagerCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'usermanager';
 
     public $description = 'My command';
 
